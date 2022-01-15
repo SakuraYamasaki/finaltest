@@ -31,8 +31,8 @@ for ($i = 1; $i <= 1000; $i++) {
 
 
 $arr = [
-    'watanabe'=>['name'=>'sakura',['live'=>'kobe',['age'=>'21',['nat'=>'japan']]]],
-    'tanaka'=>['name'=>'ken',['live'=>'tokyo',['age'=>'20',['nat'=>'us']]]]
+    'watanabe'=>['name'=>'sakura',['live'=>'kobe',['age'=>'hatachi',['nat'=>'japan']]]],
+    'tanaka'=>['name'=>'ken',['live'=>'tokyo',['age'=>'hatachi',['nat'=>'us']]]]
 ];
 
-echo $arr['watanabe']['name']['live']['age']['nat'];
+echo $arr['watanabe']['name'];
