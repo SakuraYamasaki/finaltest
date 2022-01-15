@@ -30,14 +30,9 @@ for ($i = 1; $i <= 1000; $i++) {
   }
 
 
-$fruit = array('apple','kiwi','banana');
-$place = array('japan','us','nz');
-$how = array('pc','grocery','phone');
-$when = array('jun','feb','mar');
-$color = array('red','green','yellow',);
+$arr = [
+    'watanabe'=>['name'=>'sakura',['live'=>'kobe',['age'=>'21',['nat'=>'japan']]]],
+    'tanaka'=>['name'=>'ken',['live'=>'tokyo',['age'=>'20',['nat'=>'us']]]]
+];
 
-$buy = array($fruit, $place, $how, $when, $color);
-
-print_r($buy);
-print $buy[0][1];
-
+echo $arr['watanabe']['name']['live']['age']['nat'];
