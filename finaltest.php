@@ -30,9 +30,19 @@ for ($i = 1; $i <= 1000; $i++) {
   }
 
 
-$arr = [
-    'watanabe'=>['name'=>'sakura',['live'=>'kobe',['age'=>'hatachi',['nat'=>'japan']]]],
-    'tanaka'=>['name'=>'ken',['live'=>'tokyo',['age'=>'hatachi',['nat'=>'us']]]]
-];
 
-echo $arr['watanabe']['name'];
+$profile = [
+  'name' => [
+      'fullname'=>'watanabesakura',
+      'fastname'=>[
+        'watanabe'=>'渡邉',
+        'lastname'=>[
+          'sakura'=>'さくら',
+          'age'=>[
+            'hatachi'=>'二十歳',
+            'from'=>[
+              'ehime'=>'愛媛'
+            ]
+]]]]];
+
+echo current($profile['name']['fastname']['lastname']['age']['from']);
